@@ -16,11 +16,13 @@ Demographic info about customers – gender, age range, and if they have partner
 
 #### Process
 1. Dataset preprocessing
-2. Remove some features from dataframe
+2. Remove some features from from dataframe 
 
 |tenure|age|address|income|ed|employ|equip|callcard|wireless|longmon|...|pager|internet|callwait|confer|ebill|loglong|logtoll|lninc|custcat|churn|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |tenure|age|address|income|ed|employ|equip|churn|
+
+i.e remove colmns in row 1 and use row 2 
 <br>
 <br>
 
@@ -29,9 +31,6 @@ Demographic info about customers – gender, age range, and if they have partner
 5. Train/Test dataset
 6. Evaluate the model
 
- 
- 
- 
  ## Evaluation
  
  ### Confusion matrix
