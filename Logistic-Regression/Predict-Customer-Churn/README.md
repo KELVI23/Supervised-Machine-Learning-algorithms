@@ -16,20 +16,21 @@ Demographic info about customers – gender, age range, and if they have partner
 
 #### Process
 1. Dataset preprocessing
-2. Remove some features from dataframe
+2. Remove some features from from dataframe 
 
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| longmon| ...| pager| internet| callwait| confer| ebill| loglong| logtoll| lninc| custcat| churn
-|--- |--- |
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| churn|
+|tenure|age|address|income|ed|employ|equip|callcard|wireless|longmon|...|pager|internet|callwait|confer|ebill|loglong|logtoll|lninc|custcat|churn|
+|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|tenure|age|address|income|ed|employ|equip|churn|
+
+i.e remove colmns in row 1 and use row 2 
+<br>
+<br>
 
 3. Turn Churn categorical value into intergers
 4. Normalize the dataset
 5. Train/Test dataset
 6. Evaluate the model
 
- 
- 
- 
  ## Evaluation
  
  ### Confusion matrix
@@ -41,7 +42,7 @@ Churn=1 Out of 15 churning customers the classifier correctly predicted 6 of the
 Churn=0 Out of the 25 customers who were predicted as unlikely to churn 24 were correctly prediected and 1 was a False negative.
 
 ### Precision & recall of each label
-<p align="right">
+<p align="center">
   <img src="https://imgur.com/ZY6rc7j.png" alt="Number of cylinders vs Co2 Emmissions" />
 </p>
 
