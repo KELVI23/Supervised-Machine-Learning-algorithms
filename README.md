@@ -3,7 +3,7 @@ Repository with supervised Machine Learning Algorithms
 
 ## Projects
 
-_Cancer_ _Cell_ Classification_ -> distinguish between benign and malignant cells using human cell records data using Support Vector Machine algorithm
+_Cancer_ _Cell_ _Classification_ -> distinguish between benign and malignant cells using human cell records data using Support Vector Machine algorithm
 
 _Credit _Card_ _Fraud_ Detection_ -> Detect fraudulent credit card transactions using Decision Tree and Support Vector Machine classification models
 
