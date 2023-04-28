@@ -18,9 +18,10 @@ Demographic info about customers – gender, age range, and if they have partner
 1. Dataset preprocessing
 2. Remove some features from dataframe
 
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| longmon| ...| pager| internet| callwait| confer| ebill| loglong| logtoll| lninc| custcat| churn|
+|tenure|age|address|income|ed|employ|equip|callcard|wireless|longmon|...|pager|internet|callwait|confer|ebill|loglong|logtoll|lninc|custcat|churn|
 |--- |--- |
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| churn|
+|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|tenure|age|address|income|ed|employ|equip|churn|
 <br>
 <br>
 
