@@ -1,52 +1,29 @@
-# Predict-Customer-Churn
+# Segment-Customer-Base
 
-## About the project
-The churn of customers is a concern for every company, this project aims to predict which demographic of customers of a telecommunication company are likely to leave and why.Typically it is less expensive to keep customers than acquire new ones, so the focus of this analysis is to predict the customers who will stay with the company. 
+ Use telecommunication provider data to segment customer base by service usage patterns and categorize them into 4 groups. If demographic data can be used to predict group membership, the company can customize offers for individual prospective customers.
 
 ### About the dataset 
+ Will focus on using demographic data, such as region, age, and marital, to predict usage patterns.
+ The target field, called custcat, has four possible values that correspond to the four customer groups, as follows: 1- Basic Service 2- E-Service 3- Plus Service 4- Total Service
 
-This is a historical customer dataset where each row represents one customer.
-
-The dataset includes information about:
-
-Customers who left within the last month – the column is called Churn
-Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
-Customer account information – how long they had been a customer, contract, payment method, paperless billing, monthly charges, and total charges
-Demographic info about customers – gender, age range, and if they have partners and dependents
+<p align="left">
+  <img src="https://imgur.com/2ooA5lt.png" alt="Dataset section" />
+</p>
 
 #### Process
-1. Dataset preprocessing
-2. Remove some features from dataframe
+1. Data preprocessing - normalize data
+2. Train/Test split
+3. Pick a random value of K and Test for accuracy
+4. Evaluate the model for the best value of K
 
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| longmon| ...| pager| internet| callwait| confer| ebill| loglong| logtoll| lninc| custcat| churn
-|--- |--- |
-|tenure|age| address| income| ed| employ| equip| callcard| wireless| churn|
-
-3. Turn Churn categorical value into intergers
-4. Normalize the dataset
-5. Train/Test dataset
-6. Evaluate the model
-
+## Evaluation
  
+ To choose the right value for K in KNN, you can reserve a part of your data for testing the accuracy of the model.
+ Then choose k = random value/1, use the training part for modeling, and calculate the accuracy of prediction using all samples in your test set. Repeat this process, increasing the k, and see which k is the best for your model.
  
- 
- ## Evaluation
- 
- ### Confusion matrix
-<p align="left">
-  <img src="https://imgur.com/1O798EY.png" alt="Confusion matrix" />
-</p>
-Churn=1 Out of 15 churning customers the classifier correctly predicted 6 of them as likely to churn and 9 incorrectly as false positives. While 9 of the customers had a churn value of 1 it predicted the churn value as 0.
-
-Churn=0 Out of the 25 customers who were predicted as unlikely to churn 24 were correctly prediected and 1 was a False negative.
-
-### Precision & recall of each label
+ #### Calculate the accuracy of KNN for different values of k.
 <p align="right">
-  <img src="https://imgur.com/ZY6rc7j.png" alt="Number of cylinders vs Co2 Emmissions" />
-</p>
+  <img src="https://imgur.com/bFM0hFA.png" alt="Number of neighbors plot" />
+  </p>
 
-Precision is a measure of the accuracy provided that a class label has been predicted. It is defined by: precision = TP / (TP + FP)
-
-Recall is the true positive rate. It is defined as: Recall =  TP / (TP + FN). 
-
-_The balance between precision and recall makes for higher F1 score_
+ ##### The best accuracy was with 0.34 with k= 9
