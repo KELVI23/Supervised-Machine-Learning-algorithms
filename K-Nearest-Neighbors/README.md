@@ -22,7 +22,7 @@
  Then choose k = random value/1, use the training part for modeling, and calculate the accuracy of prediction using all samples in your test set. Repeat this process, increasing the k, and see which k is the best for your model.
  
  #### Calculate the accuracy of KNN for different values of k.
-<p align="right">
+<p align="center">
   <img src="https://imgur.com/bFM0hFA.png" alt="Number of neighbors plot" />
   </p>
 
