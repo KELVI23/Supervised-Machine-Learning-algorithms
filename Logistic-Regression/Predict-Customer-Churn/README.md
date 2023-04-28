@@ -21,6 +21,8 @@ Demographic info about customers – gender, age range, and if they have partner
 |tenure|age| address| income| ed| employ| equip| callcard| wireless| longmon| ...| pager| internet| callwait| confer| ebill| loglong| logtoll| lninc| custcat| churn|
 |--- |--- |
 |tenure|age| address| income| ed| employ| equip| callcard| wireless| churn|
+<br>
+<br>
 
 3. Turn Churn categorical value into intergers
 4. Normalize the dataset
