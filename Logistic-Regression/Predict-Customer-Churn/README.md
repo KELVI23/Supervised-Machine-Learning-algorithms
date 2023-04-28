@@ -41,7 +41,7 @@ Churn=1 Out of 15 churning customers the classifier correctly predicted 6 of the
 Churn=0 Out of the 25 customers who were predicted as unlikely to churn 24 were correctly prediected and 1 was a False negative.
 
 ### Precision & recall of each label
-<p align="right">
+<p align="center">
   <img src="https://imgur.com/ZY6rc7j.png" alt="Number of cylinders vs Co2 Emmissions" />
 </p>
 
